@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>ICS6 Bootstrap</title>
+    <link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+body {
+            margin-bottom: 40px;
+        }
+main {
+            margin-top: 15px;
+        }
+        footer {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+}
+        .my-primary {
+            background-color: blue;
+            color: white;
+        }
+        p{
+    font-size:18px;
+    font-family: "Times New Roman";
+}
+.check{
+    padding-left: 100px;
+}
+.name{
+    font-style:italic;
+    color:blue;
+}
+.date{
+    color:red;
+    font-stretch: ultra-expanded;
+}
+.TLOU{
+    font-weight: 800;
+}
+.formula{
+    color:yellowgreen;
+    font-family: "Comic Sans MS";   
+}
+    </style>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link</a>
+            </li>
+</ul> </nav>
+</header>
+    <main class="container">
+        <div class="row">
+            <div class="col-4">
+            <img src="avatar.jpg" alt="avatar" width="150" height="150">
+</div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div>
+                    <table class="form-group">
+                        <tr>
+                            <th>Логин</th>
+                            <td> <input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th>Почта</th>
+                            <td> <input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th>Пароль</th>
+                            <td> <input type="password" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th>Больше 16 лет?</th>
+                            <td class="check"><input type="checkbox" class="form-check-input"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2"> <button type="submit" class="btn btn-success">Принять</button></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-6">
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">ВТ</th>
+                        <th scope="col">Время</th>
+                        <th scope="col">ЧС</th>
+                        <th scope="col">ЗН</th>
+                      </tr>
+                    </thead>
+                    
+                    <tbody>
+                      <tr>
+                        <th scope="row" rowspan="3"></th>
+                        <td>12:00-13:35</td>
+                        <td colspan="2">(лек) Языки интернет-программирования 501ю Самарев Р. С.</td>
+                      </tr>
+                      <tr>
+                        <td>13:50-15:25</td>
+                        <td colspan="2">(лек) Базы данных 501ю Фомин М. М.</td>
+                      </tr>
+                      <tr>
+                        <td>15:40-17:15	</td>
+                        <td>(сем) Физика 323</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;When <span class="name"> Naughty Dog </span>revealed <span class="TLOU">The Last of Us Part 1</span> earlier this year,
+                    a complete visual remake of the original <span class="TLOU">The Last of Us</span> from <span class="date">2013</span>,
+                    we were a little surprised.
+                    There's always a debate to be had about the timing of a re-release,
+                    and we wondered whether the new version would be different enough from the <span class="date">2014</span> <span class="name">PS4</span> remaster
+                    and <span class="date">2016</span> <span class="name">PS4 Pro</span> patch to justify a purchase from newcomers to the seasons and series veterans alike.
+                    After spending some time with the final release,
+                    we have some answers - including comparisons between the new <span class="name">PS5</span> release and the prior <span class="name">PS3</span> and <span class="name">PS4</span> versions,
+                    the video modes available and the gameplay changes included.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;First, let's rewind.
+                        The Last of Us was the PS3's <span class="TLOU">swan song</span>,
+                        a showpiece title released just months before the arrival of the <span class="name">PS4</span>. 
+                        The mix of storytelling, survival horror and action resonated with fans,
+                        becoming one of <span class="name">Naughty Dog's</span> most successful games ever.
+                        The technical challenge <span class="name">Naughty Dog's</span> created for itself was the creation of a world
+                        almost entirely devoid of electric lights(<small>The Last of Us relies heavily on indirect lighting which,
+                        in <span class="date">2013</span>, was still very difficult to achieve even when leaning on pre-calculated techniques).</small>
+                        Against the odds,
+                        Naughty Dog did manage to come up with a suitable solution to this problem - it's far from perfect,
+                        mind you, but the world was convincingly lit and designed.
+                        The problem was that on <span class="name">PS3</span>, the performance just didn't hold up and many larger areas exhibited severe frame-rate issues that detracted from the experience.
+                    </p>
+            
+                    <p class="formula">
+                        <var> x <sup>2</sup> </var> + <var> y <sup>2</sup> </var> = 25
+                    </p>
+            
+                    <p class="formula">
+                         H<sub>2</sub>O
+                    </p>
+            </div>
+        </div>
+    </main>
+    <footer class="my-primary">
+        <div class="container">
+            <p class="footer-text">Footer</p>
+        </div>
+    </footer>
+</body>
+</html>

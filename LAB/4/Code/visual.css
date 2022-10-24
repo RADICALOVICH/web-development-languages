@@ -1,0 +1,19 @@
+#prices:hover{
+    background:red;
+}
+#first_table{
+    float:left;
+}
+#second_table{
+    float: right;
+}
+#order_table{
+    margin:auto;
+}
+.sum{
+    display: block;
+    margin:auto;
+}
+#result_sum{
+    text-align: center;
+}

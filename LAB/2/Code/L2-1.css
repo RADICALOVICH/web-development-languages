@@ -1,0 +1,19 @@
+p{
+    font-size:18px;
+    font-family: "Times New Roman";
+}
+.name{
+    font-style:italic;
+    color:blue;
+}
+.date{
+    color:red;
+    font-stretch: ultra-expanded;
+}
+.TLOU{
+    font-weight: 800;
+}
+.formula{
+    color:yellowgreen;
+    font-family: "Comic Sans MS";   
+}

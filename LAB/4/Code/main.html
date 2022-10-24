@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>L4</title>
+        <meta charset="utf-8">
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="visual.css">
+    </head>
+    <body>
+        <h1>Добавление в таблицу</h1>
+        <form id="add">
+            <label for="name">Название товара:</label><br>
+            <input type="text" id="name"><br>
+            <label for="price">Цена товара:</label><br>
+            <input type="number" min="0" id="price"><br><br>
+            <input type="button" value="Добавить" onclick="add()">
+          </form>
+        <br><br>
+        
+        <div id ="first_table">
+            <h1> Таблица товаров</h1>
+            <table id="main_table" border="1">
+                <tr>
+                    <th>Название товара</th>
+                    <th>Цена товара</th>
+                </tr>
+            </table> 
+        </div>
+        <div id="second_table">
+            <h1>Формирование заказа</h1>
+            <table id ="order_table" border="1">
+                <tr>
+                    <th>Название товара</th>
+                    <th>Цена товара</th>
+                </tr>
+            </table>
+            <br>
+            <input type="button" value="Рассчитать" class="sum" onclick="Sum()">
+            <br>
+            <p id="result_sum"></p>
+        </div>
+    </body>
+</html>
