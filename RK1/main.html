@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Полубояров Валерий Константинович. Вариант 16.</title>
+        <meta charset="utf-8">  
+    </head>
+    <script type="text/javascript">
+        function result(){
+            var flag = 1;
+            string = document.getElementById("input").value;
+            regex1 = /[^,]/g;
+            regex2 = /\D/g;
+            console.log(string.match(regex1,regex2));
+            str_array = string.split(",");
+            num_array = new Array();
+            for (i = 0; i <str_array.length;i++){
+                num_array.push(parseInt(str_array[i]));
+            }
+            correct_num = 0;
+            correct_i = 0
+            for(i = 0; i < num_array.length;i++){
+                if(num_array[i] % 3 == 0){
+                    correct_num = num_array[i];
+                    correct_i = i;
+                    break;
+                } 
+            }
+            num_array.splice(correct_i,1);
+            min = num_array[0];
+            var min_i = 0;
+            for(i = 0; i < num_array.length;i++){
+                if(num_array[i] < min){
+                    min = num_array[i];
+                    min_i = i;
+                }
+            }
+            num_array.splice(min_i,0,correct_num); 
+            res_str = document.getElementById("result");
+            if(flag == 1)res_str.innerHTML = "Результат: " + num_array;
+        }
+    </script>
+    <body>
+        <h1>Полубояров Валерий Константинович</h1>
+        <h2>Билет N27</h2>
+        <h3>Дан массив чисел arr_z.
+            Найти номер первого кратного 3 элемента 
+            и поместить этот номер на место минимального элемента.</h3><br><br>
+        <h4>Введите массив чисел через запятые, без пробелов</h4>
+        <form>
+            <label for="input">Массив:</label>
+            <input type="text" value="10,20,30,40" id="input" pattern="/ */">
+            <input type="button" value="Сформировать" onclick="result()"></button>
+        </form>
+        <h4 id="ex"></h4>
+        <h4 id="result"></h4>     
+    </body>
+</html>
