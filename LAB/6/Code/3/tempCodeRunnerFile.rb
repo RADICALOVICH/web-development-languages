@@ -1,1 +1,0 @@
-lyambda.call(x)
